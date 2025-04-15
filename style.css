@@ -1,0 +1,187 @@
+* {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+	border: none;
+    font-family: "JetbrainsMono Nerd Font" ;
+	font-size: 15px;
+	min-height: 10px;
+}
+
+window#waybar {
+    background: rgba(17, 17, 17, 0.5);
+}
+
+#window {
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	color: transparent;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#tray {
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	color: #bdbdbd;
+	background: transparent;
+}
+
+#network {
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	background: transparent;
+	color: #bdbdbd;
+}
+
+#custom-vpn {
+	padding-left: 5px;
+	padding-right: 5px;
+	transition: none;
+	color: #bdbdbd;
+	background: transparent;
+}
+
+#pulseaudio {
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	color: #bdbdbd;
+	background: transparent;
+}
+
+#battery {
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	color: #bdbdbd;
+	background: transparent;
+}
+
+#battery.charging, #battery.plugged {
+	color: #bdbdbd;
+	background: transparent;
+}
+
+#battery.critical:not(.charging) {
+	background: transparent;
+	color: #bdbdbd;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        color: #B5E8E0;
+    }
+}
+
+#backlight {
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	color: #bdbdbd;
+	background: transparent;
+}
+
+#clock {
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	color: #bdbdbd;
+	background: transparent;
+}
+
+#memory {
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	color: #bdbdbd;
+	background: transparent;
+}
+#cpu {
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	color: #bdbdbd;
+	background: transparent;
+}
+
+
+#custom-launcher {
+	font-size: 24px;
+	padding-left: 10px;
+	padding-right: 5px;
+	transition: none;
+	color: #bdbdbd;
+	background: transparent;
+}
+
+#custom-power {
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 5px;
+	transition: none;
+	color: #bdbdbd;
+	background: transparent;
+}
+
+
+#custom-updates {
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	color: #bdbdbd;
+	background: transparent;
+}
+
+#custom-media {
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: none;
+	color: #bdbdbd;
+	background: transparent;
+}
+#workspaces {
+    padding: 0px 5px;
+    background: transparent;
+}
+#workspaces button {
+    all:unset;
+    padding: 0px 5px;
+	color: #bdbdbd;
+    transition: all .2s ease;
+}
+#workspaces button:hover {
+    color:rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+#workspaces button.active {
+    color: #84d1a6;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+#workspaces button.empty {
+    color: rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
+}
+#workspaces button.empty:hover {
+    color: rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
+}
+#workspaces button.empty.active {
+    color: #cbd184;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
