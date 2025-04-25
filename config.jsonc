@@ -15,7 +15,7 @@
 	},
     "custom/vpn":{
         "format": "{}",
-        "interval": 30,
+        "interval": 10,
         "exec": "~/.config/waybar/checkvpn.sh"
     },
 	"hyprland/workspaces": {
@@ -86,7 +86,7 @@
     "custom/power":{
         "format": " ",
         "tooltip": false,
-        "on-click": "wlogout"
+        "on-click": "wlogout -b 2"
     },
     "custom/updates":{
         "format": " : {}",
